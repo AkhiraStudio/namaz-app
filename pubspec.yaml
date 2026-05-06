@@ -1,0 +1,99 @@
+name: namaz_app
+description: Application de prière islamique premium.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.1
+
+  # Stockage local
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Réseau
+  dio: ^5.7.0
+  connectivity_plus: ^6.1.0
+
+  # Localisation GPS
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+  geocoding: ^3.0.0
+
+  # Qibla / Boussole
+  flutter_compass: ^0.8.0
+
+  # Audio (Adhan + Adhkar)
+  just_audio: ^0.9.40
+
+  # UI / Visuel
+  flutter_svg: ^2.0.17
+  flutter_animate: ^4.5.0
+  cached_network_image: ^3.4.1
+
+  # Notifications / Alarmes
+  flutter_local_notifications: ^17.2.4
+  timezone: ^0.9.4
+
+  # Ouverture de liens externes (Google Maps)
+  url_launcher: ^6.3.1
+
+  # Firebase — Auth + Firestore cross-device sync
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.3
+  google_sign_in: ^6.2.1
+
+  # In-App Purchases (RevenueCat)
+  purchases_flutter: ^8.0.0
+
+  # Widgets écran d'accueil
+  home_widget: ^0.7.0
+  hijri: ^3.0.0
+
+  # Utilitaires
+  intl: ^0.20.2
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  shared_preferences: ^2.3.3
+  path_provider: ^2.1.5
+  uuid: ^4.5.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/audio/adhan/
+    - assets/audio/adhkar/
+    - assets/images/logo.jpg
+    - assets/images/pro_badge.jpeg
+    - assets/images/garden/
+    - assets/images/onboarding/
+    - assets/l10n/
+
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri/Amiri-Bold.ttf
+          weight: 700

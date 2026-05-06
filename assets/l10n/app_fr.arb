@@ -1,0 +1,861 @@
+{
+  "@@locale": "fr",
+
+  "retryButton": "Réessayer",
+  "@retryButton": {},
+
+  "cancelButton": "Annuler",
+  "@cancelButton": {},
+
+  "confirmButton": "Confirmer",
+  "@confirmButton": {},
+
+  "saveButton": "Sauvegarder",
+  "@saveButton": {},
+
+  "continueButton": "Continuer",
+  "@continueButton": {},
+
+  "deleteButton": "Supprimer",
+  "@deleteButton": {},
+
+  "welcomeTitle": "Bienvenue sur Namaz",
+  "@welcomeTitle": {},
+
+  "welcomeSubtitle": "Votre compagnon spirituel pour les 5 prières quotidiennes.",
+  "@welcomeSubtitle": {},
+
+  "preciseTimesTitle": "Horaires Précis",
+  "@preciseTimesTitle": {},
+
+  "preciseTimesSubtitle": "Horaires calculés selon votre mosquée de référence, mis à jour en temps réel.",
+  "@preciseTimesSubtitle": {},
+
+  "guidedMakeupTitle": "Rattrapage Guidé",
+  "@guidedMakeupTitle": {},
+
+  "guidedMakeupSubtitle": "Suivez vos dettes de prières et rattrapez-les à votre rythme.\n\n🌿 Jardin spirituel — bientôt disponible",
+  "@guidedMakeupSubtitle": {},
+
+  "qiblaPlusTitle": "Qibla & Plus",
+  "@qiblaPlusTitle": {},
+
+  "qiblaPlusSubtitle": "Boussole Qibla, adhkars, statistiques et bien plus encore.",
+  "@qiblaPlusSubtitle": {},
+
+  "skipButton": "Passer",
+  "@skipButton": {},
+
+  "nextButton": "Suivant",
+  "@nextButton": {},
+
+  "startButton": "Commencer",
+  "@startButton": {},
+
+  "createProfileTitle": "Créer mon profil",
+  "@createProfileTitle": {},
+
+  "yourFirstNameLabel": "Votre prénom",
+  "@yourFirstNameLabel": {},
+
+  "enterFirstNameHint": "Entrez votre prénom",
+  "@enterFirstNameHint": {},
+
+  "youAreLabel": "Vous êtes",
+  "@youAreLabel": {},
+
+  "menstrualCycleLabel": "Cycle menstruel",
+  "@menstrualCycleLabel": {},
+
+  "cycleDurationLabel": "Durée cycle (j)",
+  "@cycleDurationLabel": {},
+
+  "menstruationDurationLabel": "Durée règles (j)",
+  "@menstruationDurationLabel": {},
+
+  "profileUpdatedSnackbar": "Profil mis à jour !",
+  "@profileUpdatedSnackbar": {},
+
+  "changeEmailTitle": "Changer l'email",
+  "@changeEmailTitle": {},
+
+  "newEmailLabel": "Nouvel email",
+  "@newEmailLabel": {},
+
+  "verificationEmailSent": "Email de vérification envoyé à la nouvelle adresse.",
+  "@verificationEmailSent": {},
+
+  "changePasswordTitle": "Changer le mot de passe",
+  "@changePasswordTitle": {},
+
+  "newPasswordLabel": "Nouveau mot de passe",
+  "@newPasswordLabel": {},
+
+  "confirmPasswordLabel": "Confirmer",
+  "@confirmPasswordLabel": {},
+
+  "passwordUpdatedSnackbar": "Mot de passe mis à jour !",
+  "@passwordUpdatedSnackbar": {},
+
+  "deleteProfileTitle": "Supprimer le profil",
+  "@deleteProfileTitle": {},
+
+  "deleteProfileWarning": "Toutes vos données (prières, qada, sunnah) seront supprimées définitivement. Cette action est irréversible.",
+  "@deleteProfileWarning": {},
+
+  "googleLinkedSnackbar": "Compte Google associé avec succès !",
+  "@googleLinkedSnackbar": {},
+
+  "signOutDialogTitle": "Se déconnecter",
+  "@signOutDialogTitle": {},
+
+  "signOutWarning": "Vos données locales seront conservées.",
+  "@signOutWarning": {},
+
+  "signOutButton": "Déconnecter",
+  "@signOutButton": {},
+
+  "profileScreenTitle": "Mon profil",
+  "@profileScreenTitle": {},
+
+  "anonymousAccountLabel": "Compte anonyme",
+  "@anonymousAccountLabel": {},
+
+  "personalInfoSection": "Informations personnelles",
+  "@personalInfoSection": {},
+
+  "firstNameLabel": "Prénom",
+  "@firstNameLabel": {},
+
+  "genderLabel": "Genre",
+  "@genderLabel": {},
+
+  "accountSection": "Compte",
+  "@accountSection": {},
+
+  "linkGoogleButton": "Associer à Google",
+  "@linkGoogleButton": {},
+
+  "linkGoogleSubtitle": "Sauvegardez vos données sur tous vos appareils",
+  "@linkGoogleSubtitle": {},
+
+  "dangerZoneSection": "Zone de danger",
+  "@dangerZoneSection": {},
+
+  "deleteProfileOption": "Supprimer mon profil",
+  "@deleteProfileOption": {},
+
+  "deleteProfileDescription": "Supprime toutes vos données de manière définitive",
+  "@deleteProfileDescription": {},
+
+  "myMosqueTitle": "Ma mosquée",
+  "@myMosqueTitle": {},
+
+  "travelerModeLabel": "Mode Voyageur",
+  "@travelerModeLabel": {},
+
+  "travelerModeSubtitle": "Horaires mis à jour selon votre position GPS",
+  "@travelerModeSubtitle": {},
+
+  "nearbyMosquesLabel": "Mosquées à proximité",
+  "@nearbyMosquesLabel": {},
+
+  "selectMosqueHint": "Sélectionnez votre mosquée de référence",
+  "@selectMosqueHint": {},
+
+  "mosquesLoadError": "Impossible de charger les mosquées.\nVérifiez que la localisation est activée.",
+  "@mosquesLoadError": {},
+
+  "noMosquesFound": "Aucune mosquée trouvée à proximité.",
+  "@noMosquesFound": {},
+
+  "continueWithMosque": "Continuer avec {mosqueName}",
+  "@continueWithMosque": {
+    "placeholders": {
+      "mosqueName": { "type": "String" }
+    }
+  },
+
+  "continueWithoutMosque": "Continuer sans mosquée",
+  "@continueWithoutMosque": {},
+
+  "prayerEndedLabel": "Terminée",
+  "@prayerEndedLabel": {},
+
+  "currentPrayerLabel": "Prière en cours",
+  "@currentPrayerLabel": {},
+
+  "nextPrayerLabel": "Prochaine prière",
+  "@nextPrayerLabel": {},
+
+  "nearbyMosquesTitle": "Mosquées proches",
+  "@nearbyMosquesTitle": {},
+
+  "unableToLoadMosques": "Impossible de charger les mosquées.",
+  "@unableToLoadMosques": {},
+
+  "postPrayerTasbihTitle": "Tasbih post-prière",
+  "@postPrayerTasbihTitle": {},
+
+  "subhanaAllahLabel": "SubhânAllah",
+  "@subhanaAllahLabel": {},
+
+  "alhamdulillahLabel": "Al-hamdulillah",
+  "@alhamdulillahLabel": {},
+
+  "allahuAkbarLabel": "Allahu Akbar",
+  "@allahuAkbarLabel": {},
+
+  "editStatusTitle": "Modifier le statut",
+  "@editStatusTitle": {},
+
+  "validatePrayerTitle": "Valider la prière",
+  "@validatePrayerTitle": {},
+
+  "prayedEarlyButton": "Prié tôt",
+  "@prayedEarlyButton": {},
+
+  "prayedOnTimeButton": "À l'heure",
+  "@prayedOnTimeButton": {},
+
+  "prayedLateButton": "Tard",
+  "@prayedLateButton": {},
+
+  "missedButton": "Manquée",
+  "@missedButton": {},
+
+  "menstruationButton": "Menstrues",
+  "@menstruationButton": {},
+
+  "prayedOnTimeLabel": "Prié à l'heure",
+  "@prayedOnTimeLabel": {},
+
+  "prayedLateLabel": "Tard",
+  "@prayedLateLabel": {},
+
+  "missedPrayerLabel": "Prière manquée",
+  "@missedPrayerLabel": {},
+
+  "recordedLabel": "Enregistrée",
+  "@recordedLabel": {},
+
+  "morningAdhkarsTitle": "Adhkars du matin",
+  "@morningAdhkarsTitle": {},
+
+  "eveningAdhkarsTitle": "Adhkars du soir",
+  "@eveningAdhkarsTitle": {},
+
+  "afterPrayerTitle": "Après la prière",
+  "@afterPrayerTitle": {},
+
+  "adhkarProgressHint": "21 invocations • reprendre où j'en suis",
+  "@adhkarProgressHint": {},
+
+  "resetConfirmTitle": "Réinitialiser ?",
+  "@resetConfirmTitle": {},
+
+  "resetConfirmMessage": "Remettre la progression à zéro ?",
+  "@resetConfirmMessage": {},
+
+  "resetButton": "Réinitialiser",
+  "@resetButton": {},
+
+  "invocationCounter": "Invocation {current} / {total}",
+  "@invocationCounter": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "touchToReciteHint": "Toucher l'écran pour réciter",
+  "@touchToReciteHint": {},
+
+  "doneButton": "Fait",
+  "@doneButton": {},
+
+  "completedLabel": "Accomplie",
+  "@completedLabel": {},
+
+  "tapToValidateLabel": "Toucher pour valider",
+  "@tapToValidateLabel": {},
+
+  "allahiBarak": "Allahi Barak !",
+  "@allahiBarak": {},
+
+  "morningAdhkarsCompletedMessage": "Tu as accompli les adhkars du matin.\nQu'Allah les accepte de ta part.",
+  "@morningAdhkarsCompletedMessage": {},
+
+  "eveningAdhkarsCompletedMessage": "Tu as accompli les adhkars du soir.\nQu'Allah les accepte de ta part.",
+  "@eveningAdhkarsCompletedMessage": {},
+
+  "sleepAdhkarsTitle": "Adhkars du coucher",
+  "@sleepAdhkarsTitle": {},
+
+  "sleepAdhkarsCompletedMessage": "Tu as accompli les adhkars du coucher.\nQu'Allah les accepte de ta part.",
+  "@sleepAdhkarsCompletedMessage": {},
+
+  "restartButton": "Recommencer",
+  "@restartButton": {},
+
+  "statisticsTitle": "Statistiques",
+  "@statisticsTitle": {},
+
+  "missedPrayersPerSalah": "Prières manquées par salat",
+  "@missedPrayersPerSalah": {},
+
+  "currentStreakLabel": "Streak actuel",
+  "@currentStreakLabel": {},
+
+  "longestStreakLabel": "Meilleur streak",
+  "@longestStreakLabel": {},
+
+  "sunnahPrayersTitle": "Prières surérogatoires",
+  "@sunnahPrayersTitle": {},
+
+  "spiritualPracticesTitle": "Pratiques spirituelles",
+  "@spiritualPracticesTitle": {},
+
+  "hideMissedPrayers": "Masquer les prières manquées",
+  "@hideMissedPrayers": {},
+
+  "showMissedPrayers": "Afficher les prières manquées",
+  "@showMissedPrayers": {},
+
+  "adherenceRateLabel": "Taux d'assiduité",
+  "@adherenceRateLabel": {},
+
+  "excellentAdherence": "Excellent ! Continuez ainsi.",
+  "@excellentAdherence": {},
+
+  "goodAdherence": "Bien, mais vous pouvez mieux faire.",
+  "@goodAdherence": {},
+
+  "needsEffort": "Des efforts sont nécessaires.",
+  "@needsEffort": {},
+
+  "completedPrayersLabel": "Effectuées",
+  "@completedPrayersLabel": {},
+
+  "missedPrayersLabel": "Manquées",
+  "@missedPrayersLabel": {},
+
+  "earlyLabel": "Tôt",
+  "@earlyLabel": {},
+
+  "lateLabel": "Tard",
+  "@lateLabel": {},
+
+  "noneLabel": "✓ Aucune",
+  "@noneLabel": {},
+
+  "missedSingular": "manquée",
+  "@missedSingular": {},
+
+  "missedPlural": "manquées",
+  "@missedPlural": {},
+
+  "weeklyReportTitle": "Rapport de la semaine",
+  "@weeklyReportTitle": {},
+
+  "previousWeekLabel": "Sem. précédente",
+  "@previousWeekLabel": {},
+
+  "thisWeekLabel": "Cette semaine",
+  "@thisWeekLabel": {},
+
+  "selectedPeriodSuffix": "sur la période sélectionnée",
+  "@selectedPeriodSuffix": {},
+
+  "calculateDebtTitle": "Calculer ma dette",
+  "@calculateDebtTitle": {},
+
+  "qadaInstructions": "Entrez la date à laquelle vous avez arrêté de prier et la date à laquelle vous avez repris. L'application calculera automatiquement le nombre de jours à rattraper, en déduisant les jours de menstrues si vous êtes une femme.",
+  "@qadaInstructions": {},
+
+  "resultLabel": "Résultat",
+  "@resultLabel": {},
+
+  "totalDaysLabel": "Jours totaux",
+  "@totalDaysLabel": {},
+
+  "menstruationDeducted": "Règles déduites",
+  "@menstruationDeducted": {},
+
+  "effectiveDaysLabel": "Jours effectifs",
+  "@effectiveDaysLabel": {},
+
+  "prayerDaysLabel": "Jours de prières",
+  "@prayerDaysLabel": {},
+
+  "totalPrayersLabel": "Total prières",
+  "@totalPrayersLabel": {},
+
+  "setEndGoalLabel": "Définir un objectif de fin",
+  "@setEndGoalLabel": {},
+
+  "dailyGoalLabel": "Objectif quotidien",
+  "@dailyGoalLabel": {},
+
+  "desiredEndDateLabel": "Date de fin souhaitée",
+  "@desiredEndDateLabel": {},
+
+  "chooseDateButton": "Choisir une date de fin",
+  "@chooseDateButton": {},
+
+  "goalDateButton": "Objectif : {day}/{month}/{year}",
+  "@goalDateButton": {
+    "placeholders": {
+      "day": { "type": "int" },
+      "month": { "type": "int" },
+      "year": { "type": "int" }
+    }
+  },
+
+  "stopDateHelpText": "Début de la période sans pratique",
+  "@stopDateHelpText": {},
+
+  "resumeDateHelpText": "Reprise de la pratique",
+  "@resumeDateHelpText": {},
+
+  "cycleInfoLabel": "Cycle utilisé : {cycleDays} j  •  Règles : {mensDays} j\n(depuis votre profil)",
+  "@cycleInfoLabel": {
+    "placeholders": {
+      "cycleDays": { "type": "int" },
+      "mensDays": { "type": "int" }
+    }
+  },
+
+  "periodLabel": "Période {number}",
+  "@periodLabel": {
+    "placeholders": {
+      "number": { "type": "int" }
+    }
+  },
+
+  "startStopLabel": "Début (arrêt)",
+  "@startStopLabel": {},
+
+  "endResumeLabel": "Fin (reprise)",
+  "@endResumeLabel": {},
+
+  "daysCount": "{count} jours",
+  "@daysCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "pregnancyPeriodLabel": "Période de grossesse (sans menstrues)",
+  "@pregnancyPeriodLabel": {},
+
+  "addPeriodPremium": "Ajouter une période (Premium)",
+  "@addPeriodPremium": {},
+
+  "addPeriodButton": "Ajouter une période",
+  "@addPeriodButton": {},
+
+  "calculateButton": "Calculer",
+  "@calculateButton": {},
+
+  "chooseDateLabel": "Choisir",
+  "@chooseDateLabel": {},
+
+  "qadaStatisticsTitle": "Statistiques du rattrapage",
+  "@qadaStatisticsTitle": {},
+
+  "makeupPrayersLabel": "Prières rattrapées",
+  "@makeupPrayersLabel": {},
+
+  "streaksSection": "Séries",
+  "@streaksSection": {},
+
+  "currentStreakQadaLabel": "Série actuelle",
+  "@currentStreakQadaLabel": {},
+
+  "longestStreakQadaLabel": "Meilleure série",
+  "@longestStreakQadaLabel": {},
+
+  "distributionByPrayer": "Répartition par prière",
+  "@distributionByPrayer": {},
+
+  "totalMakeupAllTime": "Total rattrapé (depuis le début)",
+  "@totalMakeupAllTime": {},
+
+  "prayerSingular": "prière",
+  "@prayerSingular": {},
+
+  "prayerPlural": "prières",
+  "@prayerPlural": {},
+
+  "cycleDurationDisplay": "Durée du cycle : {days} jours",
+  "@cycleDurationDisplay": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "menstruationDurationDisplay": "Durée des règles : {days} jours",
+  "@menstruationDurationDisplay": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+
+  "settingsTitle": "Paramètres",
+  "@settingsTitle": {},
+
+  "notificationsSection": "Notifications",
+  "@notificationsSection": {},
+
+  "prayerRemindersTitle": "Rappels de prière",
+  "@prayerRemindersTitle": {},
+
+  "prayerRemindersSubtitle": "Wudu 15 min avant + adhan",
+  "@prayerRemindersSubtitle": {},
+
+  "adhanAlertLabel": "Alerte à l'adhan",
+  "@adhanAlertLabel": {},
+
+  "qadaRemindersTitle": "Rappels de rattrapage",
+  "@qadaRemindersTitle": {},
+
+  "qadaRemindersSubtitle": "Matin {morningHour}h00 · Soir {eveningHour}h00",
+  "@qadaRemindersSubtitle": {
+    "placeholders": {
+      "morningHour": { "type": "int" },
+      "eveningHour": { "type": "int" }
+    }
+  },
+
+  "morningReminderLabel": "Rappel du matin",
+  "@morningReminderLabel": {},
+
+  "eveningReminderLabel": "Rappel du soir",
+  "@eveningReminderLabel": {},
+
+  "morningReminderHelp": "Heure du rappel matin",
+  "@morningReminderHelp": {},
+
+  "eveningReminderHelp": "Heure du rappel soir",
+  "@eveningReminderHelp": {},
+
+  "prayersSection": "Prières",
+  "@prayersSection": {},
+
+  "sunnahPrayersSubtitle": "Rawatib, Duha, Shif3 & Witr",
+  "@sunnahPrayersSubtitle": {},
+
+  "displaySection": "Affichage",
+  "@displaySection": {},
+
+  "darkModeLabel": "Mode sombre",
+  "@darkModeLabel": {},
+
+  "showStreakLabel": "Afficher la série",
+  "@showStreakLabel": {},
+
+  "showStreakSubtitle": "Jours consécutifs sans prière manquée",
+  "@showStreakSubtitle": {},
+
+  "prayerTimesSection": "Calcul des horaires",
+  "@prayerTimesSection": {},
+
+  "calculationMethodLabel": "Méthode de calcul",
+  "@calculationMethodLabel": {},
+
+  "adjustmentsLabel": "Ajustements",
+  "@adjustmentsLabel": {},
+
+  "noActiveOffset": "Aucun décalage actif",
+  "@noActiveOffset": {},
+
+  "globalOffsetLabel": "Global : {offset} min",
+  "@globalOffsetLabel": {
+    "placeholders": {
+      "offset": { "type": "String" }
+    }
+  },
+
+  "allPrayersLabel": "Toutes les prières",
+  "@allPrayersLabel": {},
+
+  "locationSection": "Localisation",
+  "@locationSection": {},
+
+  "travelerModeSubtitleSettings": "Horaires selon la position GPS",
+  "@travelerModeSubtitleSettings": {},
+
+  "dataSection": "Données",
+  "@dataSection": {},
+
+  "resetPrayersLabel": "Réinitialiser les prières",
+  "@resetPrayersLabel": {},
+
+  "resetPrayersWarning": "Toutes les données de prières seront supprimées définitivement.",
+  "@resetPrayersWarning": {},
+
+  "upgradeToPremium": "Passer à Premium",
+  "@upgradeToPremium": {},
+
+  "premiumSubtitle": "Statistiques, adhkars, jardin et plus",
+  "@premiumSubtitle": {},
+
+  "discoverButton": "Découvrir",
+  "@discoverButton": {},
+
+  "editProfileSubtitle": "Modifier le profil",
+  "@editProfileSubtitle": {},
+
+  "languageSection": "Langue",
+  "@languageSection": {},
+
+  "period7Days": "7j",
+  "@period7Days": {},
+
+  "period30Days": "30j",
+  "@period30Days": {},
+
+  "period3Months": "3m",
+  "@period3Months": {},
+
+  "period1Year": "1an",
+  "@period1Year": {},
+
+  "last7DaysLabel": "7 derniers jours",
+  "@last7DaysLabel": {},
+
+  "last30DaysLabel": "30 derniers jours",
+  "@last30DaysLabel": {},
+
+  "last3MonthsLabel": "3 derniers mois",
+  "@last3MonthsLabel": {},
+
+  "lastYearLabel": "L'année écoulée",
+  "@lastYearLabel": {},
+
+  "streakDays": "{count} j",
+  "@streakDays": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "dailyGoalPrayers": "{count} prières/jour",
+  "@dailyGoalPrayers": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "errorLabel": "Erreur : {message}",
+  "@errorLabel": {
+    "placeholders": {
+      "message": { "type": "String" }
+    }
+  },
+
+  "todayPrayerTimesTitle": "Horaires du jour",
+  "@todayPrayerTimesTitle": {},
+
+  "nightThirdTitle": "Tiers de la nuit",
+  "@nightThirdTitle": {},
+
+  "nightTabLabel": "Nuit",
+  "@nightTabLabel": {},
+
+  "statsTabLabel": "Stats",
+  "@statsTabLabel": {},
+
+  "mosquesTabLabel": "Mosquées",
+  "@mosquesTabLabel": {},
+
+  "sunriseLabel": "Shourouk",
+  "@sunriseLabel": {},
+
+  "validateButton": "Valider",
+  "@validateButton": {},
+
+  "howDidYouPrayLabel": "Comment avez-vous prié ?",
+  "@howDidYouPrayLabel": {},
+
+  "prayedEarlyDescription": "Prié tôt — dans les 30 premières min",
+  "@prayedEarlyDescription": {},
+
+  "prayedOnTimeDescription": "Prié à l'heure",
+  "@prayedOnTimeDescription": {},
+
+  "prayedLateDescription": "Prié en retard",
+  "@prayedLateDescription": {},
+
+  "postPrayerDhikrLabel": "Dhikr post-prière",
+  "@postPrayerDhikrLabel": {},
+
+  "ayatAlKursiLabel": "Ayat al-Kursi — 1×",
+  "@ayatAlKursiLabel": {},
+
+  "qadaScreenTitle": "Rattrapage",
+  "@qadaScreenTitle": {},
+
+  "scheduleTab": "Programme",
+  "@scheduleTab": {},
+
+  "missedTab": "Manquées",
+  "@missedTab": {},
+
+  "loadingLabel": "Chargement...",
+  "@loadingLabel": {},
+
+  "remainingPrayers": "{count} prières restantes",
+  "@remainingPrayers": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "noMissedPrayerTitle": "Aucune prière manquée",
+  "@noMissedPrayerTitle": {},
+
+  "allPrayersUpToDate": "Toutes vos prières sont à jour.",
+  "@allPrayersUpToDate": {},
+
+  "toMakeUpLabel": "à rattraper",
+  "@toMakeUpLabel": {},
+
+  "missedOnDate": "Manquée le {date}",
+  "@missedOnDate": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+
+  "makeUpButton": "Rattraper",
+  "@makeUpButton": {},
+
+  "calculateTabLabel": "Calcul",
+  "@calculateTabLabel": {},
+
+  "dailyObjectiveTitle": "Objectif : {value}",
+  "@dailyObjectiveTitle": {
+    "placeholders": {
+      "value": { "type": "String" }
+    }
+  },
+
+  "switchToPrayersLabel": "En prières",
+  "@switchToPrayersLabel": {},
+
+  "switchToDaysLabel": "En jours",
+  "@switchToDaysLabel": {},
+
+  "dailyGoalDays": "{count} jours/jour",
+  "@dailyGoalDays": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "makeupDaysCount": "{count} jours de rattrapage",
+  "@makeupDaysCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "qiblaDetectionMessage": "Détection de la Qibla...",
+  "@qiblaDetectionMessage": {},
+
+  "facingQiblaLine1": "Vous faites face à",
+  "@facingQiblaLine1": {},
+
+  "facingQiblaLine2": "La Qibla",
+  "@facingQiblaLine2": {},
+
+  "turnToLabel": "Tournez à",
+  "@turnToLabel": {},
+
+  "rightDirection": "droite",
+  "@rightDirection": {},
+
+  "leftDirection": "gauche",
+  "@leftDirection": {},
+
+  "calibrateCompassMessage": "Calibrez la boussole : tracez un 8 dans l'air.",
+  "@calibrateCompassMessage": {},
+
+  "compassCalibratedLabel": "Boussole calibrée",
+  "@compassCalibratedLabel": {},
+
+  "calibrationRecommendedLabel": "Calibration recommandée",
+  "@calibrationRecommendedLabel": {},
+
+  "sunnahSectionLabel": "Surérogatoires",
+  "@sunnahSectionLabel": {},
+
+  "showInPrayersLabel": "Afficher en prières",
+  "@showInPrayersLabel": {},
+
+  "showInDaysLabel": "Afficher en jours",
+  "@showInDaysLabel": {},
+
+  "daysUnit": "jours",
+  "@daysUnit": {},
+
+  "dailyGoalReachedMessage": "Objectif du jour atteint !",
+  "@dailyGoalReachedMessage": {},
+
+  "homeNavLabel": "Accueil",
+  "@homeNavLabel": {},
+  "qadaNavLabel": "Rattrapage",
+  "@qadaNavLabel": {},
+
+  "firstThirdLabel": "1er tiers",
+  "@firstThirdLabel": {},
+  "secondThirdLabel": "2ème tiers",
+  "@secondThirdLabel": {},
+  "thirdThirdLabel": "3ème tiers — Tahajjud",
+  "@thirdThirdLabel": {},
+  "nowLabel": "Maintenant",
+  "@nowLabel": {},
+  "alarmScheduledAt": "Alarme programmée à {time}",
+  "@alarmScheduledAt": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+  "alarmCancelledLabel": "Alarme annulée",
+  "@alarmCancelledLabel": {},
+
+  "globalProgressLabel": "Progression globale",
+  "@globalProgressLabel": {},
+  "dayUnit": "jour",
+  "@dayUnit": {},
+
+  "weeklyMsgGreatProgress": "Excellent progrès cette semaine ! Continuez sur cette lancée.",
+  "@weeklyMsgGreatProgress": {},
+  "weeklyMsgSlightImprovement": "Légère amélioration par rapport à la semaine dernière. Bien joué !",
+  "@weeklyMsgSlightImprovement": {},
+  "weeklyMsgHarderWeek": "Cette semaine a été plus difficile. Chaque prière compte, ne vous découragez pas.",
+  "@weeklyMsgHarderWeek": {},
+  "weeklyMsgSlightDecline": "Petit relâchement cette semaine. Reprenez le rythme, vous en êtes capable.",
+  "@weeklyMsgSlightDecline": {},
+  "weeklyMsgNotEnoughData": "Pas encore assez de données pour comparer.",
+  "@weeklyMsgNotEnoughData": {},
+  "weeklyMsgStable": "Votre régularité est constante. Maintenez cet effort !",
+  "@weeklyMsgStable": {},
+
+  "qadaWeeklyMsgExcellent": "Excellente semaine ! +{delta} prières de plus que la semaine dernière. BarakAllahu feek !",
+  "@qadaWeeklyMsgExcellent": {
+    "placeholders": { "delta": { "type": "int" } }
+  },
+  "qadaWeeklyMsgGood": "Bonne progression ! Vous avez rattrapé {delta} prières de plus cette semaine. Continuez !",
+  "@qadaWeeklyMsgGood": {
+    "placeholders": { "delta": { "type": "int" } }
+  },
+  "qadaWeeklyMsgStable": "Votre régularité est stable. Maintenez ce rythme !",
+  "@qadaWeeklyMsgStable": {},
+  "qadaWeeklyMsgSlightDecline": "Cette semaine a été un peu plus calme. Chaque prière rattrapée est une récompense — reprenez l'élan !",
+  "@qadaWeeklyMsgSlightDecline": {},
+  "qadaWeeklyMsgBigDecline": "Ne vous découragez pas ! Allah aime les actions accomplies avec constance, même petites. Une prière à la fois.",
+  "@qadaWeeklyMsgBigDecline": {},
+  "weeklyProgressTitle": "Votre progrès",
+  "@weeklyProgressTitle": {}
+}

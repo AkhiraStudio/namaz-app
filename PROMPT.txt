@@ -1,0 +1,239 @@
+Contexte
+
+Je travaille sur une application de prière premium. Voici le cahier des charges de référence. NE L'OUBLIE PAS. 
+
+Tu es un expert senior Flutter (Dart) spécialisé dans :
+• architecture propre (Clean Architecture) 
+• applications scalables 
+• UX mobile moderne 
+• Riverpod & gestion d’état avancée 
+Tu dois produire un code :
+• production-ready 
+• modulaire 
+• maintenable 
+• lisible 
+Avant de coder, réfléchis à la cohérence globale de l’architecture.
+Ne reviens jamais en arrière sur une décision structurelle déjà validée.
+
+🎯 Objectif
+Créer une application mobile Flutter complète de prière islamique avec :
+• Une création de profil et un onboarding 
+• Une page d'accueil 
+• Suivi complet des prières effectuées 
+• Module avancé de rattrapage des prières
+• Qibla (boussole) 
+• Paramètres utilisateur 
+
+⚠️ CONTRAINTE IMPORTANTE DE GÉNÉRATION
+Tu dois générer le projet ÉTAPE PAR ÉTAPE dans cet ordre STRICT :
+- étape 1 : Architecture du projet 
+- étape 2 : Modèles de données 
+- étape 3 : Services (API, stockage, logique) 
+- étape 4 : Providers (Riverpod) 
+- étape 5 : UI (screens) 
+- étape 6 : Widgets réutilisables 
+- étape 7 : Intégration finale (main.dart) 
+👉 Attends ma validation entre chaque étape.
+
+🧱 Stack technique (obligatoire)
+• Flutter (Dart) 
+• Riverpod (state management) 
+• Hive (stockage local) 
+• API : Aladhan (horaires) 
+• geolocator (GPS) 
+• flutter_compass (Qibla) 
+• just_audio (adhan) 
+
+📁 Architecture attendue
+Respecte une structure claire :
+lib/
+├── core/
+├── features/
+│ ├── prayer/
+│ ├── qada/
+│ ├── qibla/
+│ ├── settings/
+├── shared/
+├── main.dart
+👉 Sépare clairement :
+• logique métier 
+• UI 
+• data layer 
+
+Chaque feature doit suivre cette structure OBLIGATOIRE :
+
+feature/
+├── data/
+│   ├── models/
+│   ├── datasources/
+│   ├── repositories_impl/
+├── domain/
+│   ├── entities/
+│   ├── repositories/
+│   ├── usecases/
+├── presentation/
+│   ├── providers/
+│   ├── screens/
+│   ├── widgets/
+
+CAHIER DES CHARGES À RESPECTER: 
+
+1// PROFIL ET ONBOARDING 
+
+Synchronisation Cloud : Sauvegarde sécurisée des données (statistiques, dettes de prières) pour un usage multi-appareils.
+
+• ​Langues : Français, Anglais, Arabe, Mandarin, Allemand, Espagnol, Italien.
+
+• ​Profil Physiologique 
+- (Femme) : Gestion du cycle (durée moyenne) avec "Mode Menstrues" en un clic. Soustraction automatique des jours de règles lors du calcul des rattrapages passés.
+- (Homme) 
+
+• ​Localisation : Choix d'une mosquée référente + "Mode Voyageur" (mise à jour GPS automatique).
+
+2// ACCUEIL 
+
+• Prière en cours avec barre de progression de l'heure 
+       (- dans les 30 min après le adhan - Vert
+        - de 30 min après le adhan à 30 min avant le adhan d'après - Orange 
+        - dans les 30 min avant la fin de l'heure - Rouge)
+
+• Horaires des prières selon la mosquée choisis 
+
+• Calculateur automatique de tiers de la nuit 
+
+• Recherche des mosquées proche de toi (selon la localisation)
+
+• Mode Solaire (Design Dynamique) : * L’interface s’adapte à la position du soleil : fond crème chaud au lever du soleil (Fajr), teintes plus claires à midi, et passage progressif vers le violet profond (#6e618e) à la tombée de la nuit (Maghreb/Isha).
+
+• Visualisation du Temps : heure de prière en cours mise en avant avec la Barre de progression tricolore (Vert : Tôt / Orange : À l'heure / Rouge : Tard).
+==> Live Activity : Widget dynamique sur l'écran de verrouillage affichant le compte à rebours de la prière en cours.
+
+3// MODULE PRIÈRES 
+
+• Validation à 4 états : 
+- Prié tôt - Vert, 
+- Prié à l'heure - Orange , 
+- Prié tard - Rouge, 
+- Prié manquée (envoi automatique en rattrapage) - Noir 
+
+• ​Check-list Post-Prière : 
+-  33x SubhanAllah, 33x Al Hamdoulilah, 33x Allahu Akbar.
+-  Lecture d'Ayat al Kursi et Adhkars (Matin - Fajr /Soir - Asr) avec traduction et option audio (mufti menk).
+
+• Statistiques 
+
+4// MODULE RATTRAPAGE:
+
+-  Double Gestion : Un flux pour le programme long terme (en jours de rattrapage) et un flux pour les prières manquées récentes  (celles entrée automatiquement quand les prières sont manquées)
+
+-  Calculateur Intelligent : Détermination automatique du stock de prières selon la date de fin de pratique et de reprise, avec déduction forfaitaire pour les périodes de règles. (Menstrues et lochies)
+
+-  Objectifs Flexibles : Entrée d'une date de fin souhaitée (ex: "tout rattraper d'ici 2028") ; l'app recalcule l'objectif quotidien.
+
+-  Liste des prières à rattrapées qui se déplie 
+Exemple : si Objectif du jour : 3 jours de rattrapage par jour 
+ Fajr 
+- 1 + ✅️
+- 2+ ✅️
+- 3+ ✅️
+
+-  Gamification Spirituelle : * Flamme (Streak) : Assiduité quotidienne. 
+
+-  Le Jardin : Un visuel de jardin qui s'embellit à mesure que les dettes sont remboursées: 
+
+==> L’idée est de transformer la gestion technique et souvent lourde des prières manquées en une expérience visuelle gratifiante et apaisante. Au lieu d'une simple barre de progression, l'utilisateur voit un jardin spirituel s'épanouir à mesure qu'il rembourse ses dettes.
+
+​    -  La Structure par Paliers (Système des 10%)
+​Pour rendre l'objectif final moins intimidant, la progression est divisée en 10 étapes majeures. Chaque palier de 10% franchi débloque un nouvel élément visuel définitif dans le jardin.
+• ​Logique : 10 zones et 10 éléments par zone à collectionner (ex: 10% = l'herbe, 20% = le ruisseau, 50% = le pont, etc.).
+• ​Objectif : Créer un sentiment d'accomplissement concret et visuel tous les 1/100 ème du chemin.
+• 
+​    -  Identité Visuelle & Ambiance
+• ​Style : Minimalisme Premium (épuré, calme, haut de gamme).
+• ​Palette : Fond crème/beige, accent violet profond (#2E1A47), et touches dorées pour les éléments précieux.
+• ​Mode Solaire : Le jardin change d'éclairage en temps réel selon la position du soleil (teintes chaudes à l'aube, violettes au crépuscule).
+
+​    -  Fonctionnalités Clés du Module
+• ​Calculateur Intelligent : Déduction automatique des jours de menstrues et calcul précis du stock de prières selon la date de fin de pratique de la prière.
+• ​Double Flux : Gestion séparée des oublis récents (quotidiens) et du programme long terme (années passées).
+• ​Objectifs Temporels : L'utilisateur choisit une date de fin (ex: "Finir en 2028") et l'application recalcule dynamiquement le nombre de prières à faire par jour pour y arriver.
+
+​    -  Expérience Utilisateur (UX) Premium
+• ​Gamification Zen : Utilisation d'une "Flamme" (Streak) pour l'assiduité, sans la pression des apps de fitness classiques.
+• ​Feedback Haptique & Sonore : Chaque validation de prière et chaque déblocage de palier s'accompagnent de vibrations douces et de sons cristallins.
+• ​Visualisation "Stack" : Technique de superposition de calques (SVG) dans Flutter pour faire apparaître les éléments du jardin avec fluidité.
+• Barre de progression générale et quand on appuie dessus ca déplie les Barres de progression de chaque prière 
+
+
+5// PARAMÈTRES 
+
+- Changement de la langue à volonté 
+
+- Changement Format horaire FR / EN
+
+- Profil utilisateur 
+
+- Réinitialisation des données de prières 
+
+- Déconnections du compte 
+
+- Suppression du compte 
+
+- Confidentialité et Gestion des données 
+
+- Changement cycle et durée des menstrues pour les femmes 
+
+- Choix du mode voyageur (modifie les horaires de prières selon la localisation )
+
+
+Contraintes techniques
+• Android + iOS 
+• Offline partiel 
+• Performances optimisées 
+• Permissions gérées proprement 
+
+📌 RÈGLES DE CODE (TRÈS IMPORTANT)
+Tu dois :
+• Utiliser Clean Architecture 
+• Séparer : 
+• data / domain / presentation 
+• Utiliser Riverpod correctement 
+• Ajouter des commentaires utiles 
+• Éviter le code dupliqué 
+• Créer des widgets réutilisables 
+• Respecter les bonnes pratiques Flutter 
+
+🚀 FORMAT DE SORTIE
+Pour CHAQUE étape :
+• Explication courte 
+• Code complet 
+• Structure claire 
+• Prêt à copier-coller 
+
+❗ INTERDICTIONS
+• Ne génère PAS tout d’un coup 
+• Ne saute PAS d’étapes 
+• Ne fais PAS de code approximatif 
+• TODO
+• fonctions vides
+• code partiel ou simulé
+Tout doit être réellement implémenté.
+
+📌 EXIGENCES SUPPLÉMENTAIRES
+
+• Le code doit être exécutable immédiatement
+• Tous les fichiers doivent être complets
+• Gestion des erreurs obligatoire
+• Utiliser Riverpod v2 (Notifier / AsyncNotifier uniquement)
+• Navigation avec go_router
+• UI avec Material 3 + Dark mode
+• Respect strict de l’architecture :
+  data / domain / presentation
+
+Si une partie du cahier des charges ne correspond pas à l’étape actuelle :
+→ ne pas l’implémenter mais la garder en mémoire
+
+✅ PREMIÈRE TÂCHE
+Commence par :
+👉 Étape 1 : proposer une architecture complète et professionnelle du projet Flutter
+Puis attends ma validation.

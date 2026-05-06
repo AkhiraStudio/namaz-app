@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter analyze:*)",
+      "Bash(xargs grep:*)",
+      "Bash(flutter pub:*)",
+      "Bash(dart analyze:*)",
+      "Bash(grep -v \"^$\")",
+      "Bash(find /c/Users/Sab/namaz_app -name \"pubspec.yaml\" -exec head -50 {} \\\\;)",
+      "Bash(\"/c/Program Files/Java/jre1.8.0_451/bin/keytool\" -list -v -keystore \"/c/Users/Sab/.android/debug.keystore\" -alias androiddebugkey -storepass android -keypass android)"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "651708444580",
+    "project_id": "namaz-3b72c",
+    "storage_bucket": "namaz-3b72c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651708444580:android:737532333e76ea699cdb31",
+        "android_client_info": {
+          "package_name": "com.example.namaz_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaAuh2Q7qA5_7-_q8Wirsp06X86J6tBdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mode SOMBRE — palette violet profond / or -->
+<resources>
+    <color name="widget_gold">#D4A843</color>
+    <color name="widget_prayer_time">#FAF6F0</color>
+    <color name="widget_text_status">#CCB8A9D4</color>
+    <color name="widget_text_secondary">#99B8A9D4</color>
+    <color name="widget_text_muted">#CCB8A9D4</color>
+    <color name="widget_separator">#33B8A9D4</color>
+    <color name="widget_next_countdown">#99B8A9D4</color>
+</resources>
