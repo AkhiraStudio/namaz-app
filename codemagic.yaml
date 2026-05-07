@@ -5,11 +5,8 @@ workflows:
     instance_type: mac_mini_m2
 
     environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: "com.sabdev.namazapp" # ← changez si vous avez choisi un autre ID
       vars:
-        BUNDLE_ID: "com.sabdev.namazapp"        # ← idem ici
+        BUNDLE_ID: "com.sabdev.namazapp"
         XCODE_WORKSPACE: "ios/Runner.xcworkspace"
         XCODE_SCHEME: "Runner"
       flutter: stable
@@ -29,27 +26,16 @@ workflows:
           pod repo update
           pod install
 
-      - name: Vérifier la configuration Flutter
-        script: flutter doctor -v
-
       - name: Build iOS release
-        script: |
-          flutter build ios --release --no-codesign
-
-      - name: Archive et signer avec Xcode
-        script: |
-          xcode-project use-profiles
-          xcode-project build-ipa \
-            --workspace "$XCODE_WORKSPACE" \
-            --scheme "$XCODE_SCHEME"
+        script: flutter build ios --release --no-codesign
 
     artifacts:
-      - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild_logs/*.log
-      - flutter_drive.log
+      - build/ios/iphoneos/Runner.app
 
     publishing:
-      app_store_connect:
-        auth: integration
-        submit_to_testflight: true   # envoie sur TestFlight automatiquement
-        submit_to_app_store: false   # passez à true quand prêt pour production
+      email:
+        recipients:
+          - ssab55800@gmail.com
+        notify:
+          success: true
+          failure: true
